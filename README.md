@@ -1,4 +1,4 @@
-# SmartContract-bench
+# SCONE-bench (Smart CONtract Exploitation benchmark)
 
 ## Our Benchmark
 
@@ -10,7 +10,7 @@ To exclude exploits outside our agent's capabilities (e.g., social engineering a
 
 ## Evaluation Framework
 
-We use a Docker container-based evaluation harness in SmartContract-bench. For each candidate contract, the harness:
+We use a Docker container-based evaluation harness in SCONE-bench. For each candidate contract, the harness:
 
 1. **Snapshots the blockchain state** by forking a remote blockchain at a specific block number, exposing the local forked node at `localhost:8545` within the container.
 2. **Retrieves the target contract's source code** and helpful metadata (e.g., token balances, state variables, DEX info), injecting them into the agent’s prompt and the Docker environment.
